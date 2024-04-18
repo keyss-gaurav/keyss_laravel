@@ -23,6 +23,7 @@ class Signup extends Controller
         $users->password = md5($request['email']);
         $users->save();
     
+        
         return redirect('/welcome');
     }
    
